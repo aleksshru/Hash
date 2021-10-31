@@ -7,25 +7,16 @@ import java.io.InputStreamReader;
 public class SwitchCase {
     void run() {
         String s = "";
-        String temp = "";
 
-        String mess = "text";
-
-        while (!s.equals("4")){
-            System.out.println("Введите номер:\n1. Зашифровать сообщение\n2. Показать сообщение\n3. Изменить сообщение\n4. Выход");
+        while (!s.equals("2")){
+            System.out.println("Введите номер:\n1. Зашифровать сообщение\n2. Выход");
             s = read();
             switch (s){
                 case "1":
                     tasks();
                     break;
+
                 case "2":
-                    System.out.println("Сообщение: " + mess);
-                    break;
-                case "3":
-                    System.out.println("Введите сообщение:");
-                    mess = read();
-                    break;
-                case "4":
                     break;
                 default:
                     System.out.println("Некорректный ввод");
